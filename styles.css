@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Rubik+Beastly&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	color: #232323;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	text-decoration: none;
+	cursor: default;
+}
+body{
+	background: #000;
+}
+.button, a, .link, #cancel{
+	cursor: pointer;
+}
+div{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	border-radius: 20px;
+	background: linear-gradient(-15deg, red, yellow);
+	animation: animate 60s linear infinite;
+}
+@keyframes animate{
+	0%, 100%{
+		filter: hue-rotate(0deg);
+	}
+	50%{
+		filter: hue-rotate(360deg);
+	}
+}
+h1{
+	margin: auto;
+	margin-top: 200px;
+	font-size: 3rem;
+	font-family: 'Rubik Beastly', cursive;
+}
+.button{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 2rem;
+}
+#show{
+	left: 20%;
+	transform: translateY(-50%) translateX(-20%);
+	background: transparent;
+	border: none;
+}
+#no{
+	left: 80%;
+	transform: translateY(-50%) translateX(-80%);
+	transition: .3s;
+}
+p{
+	position: absolute;
+	top: 90%;
+	left: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
+}
+dialog{
+	background: #1A1A1A;
+	margin: auto;
+	padding: 10px;
+	border-radius: 10px;
+	border: none;
+	text-align: center;
+}
+dialog::backdrop{
+	backdrop-filter: blur(15px);
+}
+dialog h2{
+	color: #FCFCFC;
+	font-size: 2.2rem;
+}
+dialog button{
+	font-size: 1.2rem;
+	color: #FCFCFC;
+	background: #004A77;
+	border: #004A77;
+	border-radius: 16px;
+	padding: 10px 18px;
+}
+dialog img{
+	width: 290px;
+	height: 290px;
+}
+@media only screen and (max-width: 768px){
+	h1{
+		font-size: 1.8em;
+	}
+	button{
+		font-size: 1.2em;
+	}
+	p{
+		font-size: 1em;
+	}
+	dialog h2{
+		font-size: 1.6em;
+	}
+	dialog button{
+		font-size: 1em;
+	}
+}
