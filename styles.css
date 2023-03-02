@@ -11,7 +11,7 @@
 body{
 	background: #000;
 }
-.button, a, .link, #cancel{
+.button, a.by, .link, #cancel{
 	cursor: pointer;
 }
 div{
